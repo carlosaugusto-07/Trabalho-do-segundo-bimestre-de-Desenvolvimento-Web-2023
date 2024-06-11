@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta https-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Ficha de Frequência de Estágio</title>
+		<style>
+			html{
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			.situacao-funcional-do-estagiario{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 25px;
+				border: 2px solid black;
+			}
+			.informações-pessoais{
+				border: 2px solid black;
+
+			}			
+			.firma{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+				width: 66vw;
+			}
+			.ramo{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+				width: 24vw;
+			}
+			.endereço{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+				width: 54vw;
+			}
+			.bairro{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+				width: 14vw;
+			}
+			.cidade{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+				width: 15vw;
+			}
+			.cep{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+				width: 20vw;
+			}
+			.telefone{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+				width: 15vw;
+			}
+			.ramal{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+				width: 17vw;
+			}
+			.cargo{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+				width: 35vw;
+			}
+			.salario{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+				width: 21vw;
+			}
+			.forma-de-provimento{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+				width: 11vw;
+			}
+			.semana-de{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+				width: 4vw;
+			}
+			.dias{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+				width: 7vw;
+			}
+			.horario-das{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+				width: 7vw;
+			}
+			.as{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+				width: 9vw;
+			}
+			.e-das{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+				width: 9vw;
+			}
+			.as1{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+				width: 7vw;
+			}
+			.aos-sabados-das{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+				width: 7vw;
+			}
+			.as2{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+				width: 7vw;
+			}
+			.e-das1{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+				width: 7vw;
+			}
+			.as3{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+				width: 7vw;
+			}
+			.anotacoes{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+				width: 57vw;
+			}
+			.anotacoes1{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+				width: 98vw;
+			}
+			.avaliacao-conceitual-do-estagiario{
+				border: 2px solid black;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 40px;
+			}
+			.avaliacao-conceitual-do-estagiario-em-baixo{
+				border: 2px solid black;
+				border-top: none;
+			}
+			.data-de-admissao{
+				border: 2px solid black;
+				width: 33vw;
+				float: right;
+			}
+			.admissao{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+				width: 22vw;			
+			}
+			.dispensa{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+				width: 22vw;
+			}
+			.assiduidade{
+				display: flex;
+				align-items: stretch;
+				justify-content: space-between;
+			}
+			.in1{
+				border: 1px solid black;
+				width: 2vw;
+				height: 2vh;
+				outline: none;
+				gap: 3px;
+			}
+			.outras-observacoes{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+				width: 83vw;
+			}
+			.data-final{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;				
+			}
+			.segundo-bloco{
+				display: flex;
+				justify-content: space-between;
+			}
+			.bloco-nome-informante{
+				display: flex;
+				flex-direction:column;
+				align-items: center;
+			}
+			.nome-informante{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+				width: 30vw;
+			}
+			.bloco-cargo-funcao{
+				display: flex;
+				flex-direction:column;
+				align-items: center;
+			}
+			.cargo-funcao{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+				width: 30vw;
+			}	
+			.bloco-julgado-professor{
+				display: flex;
+				flex-direction:column;
+				align-items: center;
+			}
+			.julgado-professor{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+				width: 30vw;
+			}
+			.ndi{
+				font-size: 13px;
+			}
+			.cof{
+				font-size: 13px;
+			}
+			.jpp{
+				font-size: 13px;
+			}
+			.professor-responsavel{
+				border: 2px solid black;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 25px;
+				border-bottom: none;
+			}
+			.bloco1{
+				border: 2px solid black;
+				border-right: none;
+				width: 40rem;
+			}
+			.bloco2{
+				border: 2px solid black;
+				border-right: none;
+				width: 23.5rem;
+				text-align: center;
+			}
+			.bloco3{
+				border: 2px solid black;
+				width: 40rem;
+				text-align: center;
+			}
+			.ultimo-bloco{
+				display: flex;
+				align-items: stretch;
+				width: 100vw;
+				
+			}
+			.relatorio{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+				width: 25vw;
+			}
+			.assunto{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+				width: 33vw;
+			}
+			.assunto1{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+				width: 38vw;
+			}
+			.nome-ultimo-bloco{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+				width: 30vw;
+			}
+			.assinatura{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+				width: 30vw;
+			}
+			.rio{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+
+			
+			}
+
+			.radio{
+
+				appearance: none;
+				width: 1rem;
+				height: 1rem;
+				border: 1px solid black;
+
+			}
+			.radio:checked{
+				background-color: black;
+			}
+		</style>
+		<script>
+			alert("Essa é a página 2.");
+		</script>
+	<head>
+	<body>
+		
+			<div class="situacao-funcional-do-estagiario">
+				<h4>SITUAÇÃO FUNCIONAL DO ESTAGIÁRIO</h4>
+			</div>
+<br>
+			<div class="informações-pessoais">
+				Firma: <input type="text" class="firma">						        Ramo:<input type="text" class="ramo">
+<br>
+				Endereço: <input type="text" class="endereço">		Bairro: <input type="text" class="bairro">	  Cidade: <input type="text" class="cidade">
+<br>
+				CEP:<input type="text" class="cep">	Telefone:<input type="text" class="telefone">	Ramal:<input type="text" class="ramal">																																						
+<br>				 
+					Cargo:<input type="text" class="cargo">	 Salário:<input type="text" class="salario">
+				<div class="data-de-admissao">					
+					 Data da admissão: <input type="text" class="admissao"><br>
+					 Data da dispensa: <input type="text" class="dispensa"><br>
+					 <br>
+				</div>
+<br>				
+				Forma de provimento: <input type="text" class="forma-de-provimento">Semana de <input type="text" class="semana-de">dias	<input type="text" class="dias">Horário:   das	<input type="text" class="horario-das">às<input type="text" class="as">	
+<br>				
+				e das <input type="text" class="e-das">às <input type="text" class="as1">	 Aos sábados:  das	<input type="text" class="aos-sabados-das">às<input type="text" class="as2">e 	das<input type="text" class="e-das1">às	<input type="text" class="as3"> 
+<br>				
+				Anotações:<input type="text" class="anotacoes">
+<br>
+				<input type="text" class="anotacoes1">
+<br><br>				
+			 </div>
+		
+<br>
+
+			<div class="avaliacao-conceitual-do-estagiario">
+				<h4>AVALIAÇÃO CONCEITUAL DO ESTAGIÁRIO</h4>
+			</div>
+			<div class="avaliacao-conceitual-do-estagiario-em-baixo">
+				<!--
+					math
+				--><div class="assiduidade">
+					<div class="1-6">  01-Assiduidade<br>	  02-Pontualidade	<br>	  03-Disciplina	<br>	  04-Urbanidade	<br>	  05-Zelo Pessoal<br>	  06-Dedicação<br>	</div>
+					<div class="input1"><input type="text" class="in1"> <br>	 <input type="text" class="in1"><br>	  <input type="text" class="in1">  <br>	<input type="text" class="in1">  <br>	<input type="text" class="in1"> <br>	 <input type="text" class="in1"><br>	</div><br><br>
+					<div class="7-12">07-Iniciativa		<br>	08-Criatividade<br>		09-Capacidade De planejar<br>			10-Senso Analítico	<br>	11-Capacidade de Produção	<br>		12-Cumprimento das Metas(datas)<br>	</div><br><br>
+					<div class="input2"><input type="text" class="in1"><br>	  <input type="text" class="in1"><br>	  <input type="text" class="in1">  <br>	<input type="text" class="in1"> <br>	 <input type="text" class="in1"> <br>	 <input type="text" class="in1"><br>	</div><br><br>
+					<div class="13-18">13-Desembaraço<br>	 14-Conhecimentos Gerais <br>	 15-Conhecimentos Específicos <br>	 16-Responsabilidade  <br>	17-Aceitação Pelo Grupo  <br>	18-Capacidade De Liderança<br>	 </div><br><br>
+					<div class="input3"><input type="text" class="in1"> <br>	 <input type="text" class="in1"> <br>	 <input type="text" class="in1"> <br>	 <input type="text" class="in1"> <br>	 <input type="text" class="in1"> <br>	 <input type="text" class="in1"><br>	</div><br><br>
+					<div class="codigos-de-avaliacao"><strong>Códigos De Avaliação</strong><br>	Exelente                         A <br>	Bom                                 B    <br>	Regular                           R<br>	 Aceitável                        D <br>	Insuficiente                    E 
+				</div> 
+			</div>
+			
+<br>
+			<strong>Outras Observações:</strong> <input type="text" class="outras-observacoes"><br>
+<br>
+			<strong>Data:</strong><input type="text" class="data-final"><br><br>
+			
+			<div class="segundo-bloco">  
+				<div class="bloco-nome-informante"><input class="nome-informante"><label class="ndi">Nome Completo Do Informante</label></div>
+				<div class="bloco-cargo-funcao"> <input class="cargo-funcao"><label class="cof">Cargo ou Função</label></div>
+				<div class="bloco-julgado-professor"><input class="julgado-professor"><label class="jpp">Julgado Pelo Professor</label></div>
+			</div>
+<br>
+			</div>
+<br>	
+				<div class="professor-responsavel"> <h4>PARA USO DO PROFESSOR RESPONSÁVEL</h4></div>
+			<div class="ultimo-bloco">
+				<div class="bloco1">
+					Apresentou relatório em:<input class="relatorio"><br> <br>
+					Assunto:<input class="assunto">	<br>
+					<input class="assunto1"> <br>
+					<input class="assunto1"> <br>  
+					<input class="assunto1"> <br><br><br>
+				</div>  					
+				<div class="bloco2"> 
+					<div class="avaliacao-relatorio">Avaliação do Relatório	</div><br>	
+					<div class="a-d">
+						<label>A</label>
+						<input class="radio" name="swordep" type="radio"><br>
+						 <label>B</label>
+						 <input class="radio" name="swordep" type="radio"><br>
+						 <label>C</label>
+						 <input class="radio" name="swordep" type="radio"><br>
+						 <label>D</label>	
+						 <input class="radio" name="swordep" type="radio"><br>
+						 <label>E</label>	
+						 <input class="radio" name="swordep" type="radio"><br>	
+					</div>
+				</div>																		
+				<div class="bloco3"><strong>Julgado pelo Professor</strong><br><br>	
+										Nome:  <input class="nome-ultimo-bloco">        <br><br>
+										  Rio, <input class="rio">	de<input class="rio">de<input class="rio">	<br><br>																				E
+											 Assinatura:<input class="assinatura">
+				</div>
+			</div>
+	</body>	
+</html>		

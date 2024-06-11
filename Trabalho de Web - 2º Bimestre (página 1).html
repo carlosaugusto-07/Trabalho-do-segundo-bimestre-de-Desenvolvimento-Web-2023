@@ -1,0 +1,4617 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta https-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Ficha de Frequência de Estágio</title>
+		<style>
+		html{
+		font-family: Arial, Helvetica, sans-serif;
+		}
+			h3{
+				font-size: 1rem;
+			}
+			.paginaseguinte{
+				text-decoration: none;
+				color: black;
+			}		
+			.serac{
+				display: flex;
+				justify-content: flex-end;
+			}
+			.segundafrase{
+				padding-left: 93px;
+			}
+			.primeirafrase{
+				padding-left: 50px;
+			}
+			.logo-cefet-img{
+				width: 4.5rem;
+			}
+			.cabeçalho{
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+			.palavrascabeçalho{					
+				text-align: right;
+			}
+			.logo-cefet{
+				display: flex;			
+				align-items: center;
+				gap: 1rem;				
+			}
+			.nomecurso{
+				display: flex;
+			}
+			.nomeestagiario{
+				display: flex;
+				margin-left: 10px;
+			}
+			.inputnomeestagiario{
+				width: 540px;
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+			}
+			.inputnomecurso{
+				width: 560px;
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+			}
+			.inputmatricula{
+				width: 180px;
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+			}
+			.inputturma{
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+			}
+			.inputunidade{
+				width: 360px;
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+			}
+			.inputpoloead{
+				width: 340px;
+				border-bottom: dotted;
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				outline: none;
+			}
+			.tabela{
+				text-align: center;
+				border: 1px ;
+				border-top: solid;
+				border-right: solid;
+				border-left: solid;
+				border-bottom: solid;
+				border-collapse: collapse;
+				border-color: black;
+			}
+			th{
+				text-align: center;
+				border: 1px;
+				border-bottom: solid;
+				border-right: solid;
+				border-color: black;
+			}
+			.tabela-mes{
+				border: none;
+			}
+			.tabela-ano{
+				border: none;
+				width: 40px;
+				outline: none;
+			}
+			.tabela-dias{
+				border: none;
+				outline: none;
+			}
+			.tabela-presença{
+				border: none;
+				outline: none;
+			}
+			.tabela-horas{
+				border: none;
+				outline: none;
+			}
+			td{
+				border: 1px;
+				border: solid;
+			}
+			select{
+				border: none;
+				appearance: none;
+				width: 75px;
+				height: 20px;
+				align-items: center;
+			}
+			option{
+				width: 20px;
+				text-align: center;
+				background-color: white;
+			}
+			.mes {
+				border: none;
+				outline: none;
+			}
+			.cfxlr{
+				width: 25px;
+				outline: none;
+			}
+			.totais-cfxlr{
+				display: flex;				
+				border: none;
+				justify-content: space-between;
+			}
+			.input-totais2{
+				outline: none;
+				border: 2px solid black;
+				
+			}
+			.input-totais{
+				outline: none;
+				border: 2px solid black;
+				border-left: none;
+				
+			}
+			.input-totais1{
+				outline: none;
+				border: 2px solid black;
+				border-left: none;
+			}
+			.CFXL{
+				font-size: 15px;
+				font-weight: bold;
+			}
+			.CFXLR{
+				margin: 20px;
+			}
+			.totais{
+				
+				border: 1px solid black;
+			}
+			.palavratotais{
+				display: flex;
+				justify-content: flex-end;
+				flex-direction: row-reverse;
+				justify-content: space-evenly;
+				height: 25px;
+				margin-right: 57px;
+			}
+		</style>
+		<script>
+			alert("Essa é a página 1.");
+		</script>
+	</head>
+
+	<body>
+<!--Essa div é dedicada a uns dos maiores programadores que esse Brasil nunca viu: Swordep -->
+		<header class="cabeçalho"> 
+				<div class="logo-cefet">
+					<img src="./imagem/simbolo-cefet.svg" alt="Símbolo Cefet" class="logo-cefet-img">
+					<h3>CEFET/RJ - CENTRO FEDERAL DE EDUCAÇÃO<br>TECNOLÓGICA CELSO SUCKOW DA FONSECA</h3>
+				</div>
+				<div class="palavrascabeçalho">
+					<h1>FICHA INDIVIDUAL DE FREQUÊNCIA</h1>
+					<h2>Divisão de Integração Empresarial - DIEMP</h2>
+				</div>
+		</header>
+<!--Essa div acima que foi dedicada-->
+			<main class="main">
+				<br>
+				<div class="nomecurso">
+					<label class="nomeestagiario">Nome do Estágiário: <input type="text" class="inputnomeestagiario"></label>
+					<label class="cursode">Curso de: <input type="text" class="inputnomecurso"></label>
+				</div>
+				<br><br>
+				<div class="matriculaturma">
+					<label class="matricula">Matrícula: <input type="text" class="inputmatricula"></label>
+					<label class="turma">Turma:<input type="text" class="inputturma"></label>
+					<label class="unidade">Unidade: <input type="text" class="inputunidade"></label>
+					<label class="poloead">Polo de EAD: <input type="text" class="inputpoloead"></label>
+				<br><br><br>																																				
+				<table class="tabela">
+					<tr>
+						<th>Mês</th>
+						<th>Ano</th>
+						<th colspan="31">Frequência</th>
+						<th>"Dias Úteis"</th>
+						<th>Presença</th>
+						<th>Horas</th>
+					</tr>
+					<tr class="itens">
+						<td><br>
+							<select class="mes">
+								<option value="">ﾠ</option>
+								<option value="">Janeiro</option>
+								<option value="">Fevereiro</option>
+								<option value="">Março</option>
+								<option value="">Abril</option>
+								<option value="">Maio</option>
+								<option value="">Junho</option>
+								<option value="">Julho</option>
+								<option value="">Agosto</option>
+								<option value="">Setembro</option>
+								<option value="">Outubro</option>
+								<option value="">Novembro</option>
+								<option value="">Dezembro</option>
+							</select> </td>
+						<td> <input class="tabela-ano"> </td>
+						<td>1
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>2
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>3
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>4
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>5
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>6
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>7
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>8
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>9
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>10
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>11
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>12
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>13
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>14
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>15
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>16
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>17
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>18
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>19
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>20
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>21
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>22
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>23
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>24
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>25
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>26
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>27
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>28
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>29
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>30
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>31
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td> <input class="tabela-dias"> </td>
+						<td> <input class="tabela-presença"> </td>
+						<td> <input class="tabela-horas"> </td>
+					</tr>
+					<tr class="itens">
+						<td><br>
+							<select class="mes">
+								<option value="">ﾠ</option>
+								<option value="">Janeiro</option>
+								<option value="">Fevereiro</option>
+								<option value="">Março</option>
+								<option value="">Abril</option>
+								<option value="">Maio</option>
+								<option value="">Junho</option>
+								<option value="">Julho</option>
+								<option value="">Agosto</option>
+								<option value="">Setembro</option>
+								<option value="">Outubro</option>
+								<option value="">Novembro</option>
+								<option value="">Dezembro</option>
+							</select> </td>
+						<td> <input class="tabela-ano"> </td>
+						<td>1
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>2
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>3
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>4
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>5
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>6
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>7
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>8
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>9
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>10
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>11
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>12
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>13
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>14
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>15
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>16
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>17
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>18
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>19
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>20
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>21
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>22
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>23
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>24
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>25
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>26
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>27
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>28
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>29
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>30
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>31
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td> <input class="tabela-dias"> </td>
+						<td> <input class="tabela-presença"> </td>
+						<td> <input class="tabela-horas"> </td>
+					</tr><tr class="itens">
+						<td><br>
+							<select class="mes">
+								<option value="">ﾠ</option>
+								<option value="">Janeiro</option>
+								<option value="">Fevereiro</option>
+								<option value="">Março</option>
+								<option value="">Abril</option>
+								<option value="">Maio</option>
+								<option value="">Junho</option>
+								<option value="">Julho</option>
+								<option value="">Agosto</option>
+								<option value="">Setembro</option>
+								<option value="">Outubro</option>
+								<option value="">Novembro</option>
+								<option value="">Dezembro</option>
+							</select> </td>
+						<td> <input class="tabela-ano"> </td>
+						<td>1
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>2
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>3
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>4
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>5
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>6
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>7
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>8
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>9
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>10
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>11
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>12
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>13
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>14
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>15
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>16
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>17
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>18
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>19
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>20
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>21
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>22
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>23
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>24
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>25
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>26
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>27
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>28
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>29
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>30
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>31
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td> <input class="tabela-dias"> </td>
+						<td> <input class="tabela-presença"> </td>
+						<td> <input class="tabela-horas"> </td>
+					</tr><tr class="itens">
+						<td><br>
+							<select class="mes">
+								<option value="">ﾠ</option>
+								<option value="">Janeiro</option>
+								<option value="">Fevereiro</option>
+								<option value="">Março</option>
+								<option value="">Abril</option>
+								<option value="">Maio</option>
+								<option value="">Junho</option>
+								<option value="">Julho</option>
+								<option value="">Agosto</option>
+								<option value="">Setembro</option>
+								<option value="">Outubro</option>
+								<option value="">Novembro</option>
+								<option value="">Dezembro</option>
+							</select> </td>
+						<td> <input class="tabela-ano"> </td>
+						<td>1
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>2
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>3
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>4
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>5
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>6
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>7
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>8
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>9
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>10
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>11
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>12
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>13
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>14
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>15
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>16
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>17
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>18
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>19
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>20
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>21
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>22
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>23
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>24
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>25
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>26
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>27
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>28
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>29
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>30
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>31
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td> <input class="tabela-dias"> </td>
+						<td> <input class="tabela-presença"> </td>
+						<td> <input class="tabela-horas"> </td>
+					</tr><tr class="itens">
+						<td><br>
+							<select class="mes">
+								<option value="">ﾠ</option>
+								<option value="">Janeiro</option>
+								<option value="">Fevereiro</option>
+								<option value="">Março</option>
+								<option value="">Abril</option>
+								<option value="">Maio</option>
+								<option value="">Junho</option>
+								<option value="">Julho</option>
+								<option value="">Agosto</option>
+								<option value="">Setembro</option>
+								<option value="">Outubro</option>
+								<option value="">Novembro</option>
+								<option value="">Dezembro</option>
+							</select> </td>
+						<td> <input class="tabela-ano"> </td>
+						<td>1
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>2
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>3
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>4
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>5
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>6
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>7
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>8
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>9
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>10
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>11
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>12
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>13
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>14
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>15
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>16
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>17
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>18
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>19
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>20
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>21
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>22
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>23
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>24
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>25
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>26
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>27
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>28
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>29
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>30
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>31
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td> <input class="tabela-dias"> </td>
+						<td> <input class="tabela-presença"> </td>
+						<td> <input class="tabela-horas"> </td>
+					</tr><tr class="itens">
+						<td><br>
+							<select class="mes">
+								<option value="">ﾠ</option>
+								<option value="">Janeiro</option>
+								<option value="">Fevereiro</option>
+								<option value="">Março</option>
+								<option value="">Abril</option>
+								<option value="">Maio</option>
+								<option value="">Junho</option>
+								<option value="">Julho</option>
+								<option value="">Agosto</option>
+								<option value="">Setembro</option>
+								<option value="">Outubro</option>
+								<option value="">Novembro</option>
+								<option value="">Dezembro</option>
+							</select> </td>
+						<td> <input class="tabela-ano"> </td>
+						<td>1
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>2
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>3
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>4
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>5
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>6
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>7
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>8
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>9
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>10
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>11
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>12
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>13
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>14
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>15
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>16
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>17
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>18
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>19
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>20
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>21
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>22
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>23
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>24
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>25
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>26
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>27
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>28
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>29
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>30
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>31
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td> <input class="tabela-dias"> </td>
+						<td> <input class="tabela-presença"> </td>
+						<td> <input class="tabela-horas"> </td>
+					</tr><tr class="itens">
+						<td><br>
+							<select class="mes">
+								<option value="">ﾠ</option>
+								<option value="">Janeiro</option>
+								<option value="">Fevereiro</option>
+								<option value="">Março</option>
+								<option value="">Abril</option>
+								<option value="">Maio</option>
+								<option value="">Junho</option>
+								<option value="">Julho</option>
+								<option value="">Agosto</option>
+								<option value="">Setembro</option>
+								<option value="">Outubro</option>
+								<option value="">Novembro</option>
+								<option value="">Dezembro</option>
+							</select> </td>
+						<td> <input class="tabela-ano"> </td>
+						<td>1
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>2
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>3
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>4
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>5
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>6
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>7
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>8
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>9
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>10
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>11
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>12
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>13
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>14
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>15
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>16
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>17
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>18
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>19
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>20
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>21
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>22
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>23
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>24
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>25
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>26
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>27
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>28
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>29
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>30
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>31
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td> <input class="tabela-dias"> </td>
+						<td> <input class="tabela-presença"> </td>
+						<td> <input class="tabela-horas"> </td>
+					</tr><tr class="itens">
+						<td><br>
+							<select class="mes">
+								<option value="">ﾠ</option>
+								<option value="">Janeiro</option>
+								<option value="">Fevereiro</option>
+								<option value="">Março</option>
+								<option value="">Abril</option>
+								<option value="">Maio</option>
+								<option value="">Junho</option>
+								<option value="">Julho</option>
+								<option value="">Agosto</option>
+								<option value="">Setembro</option>
+								<option value="">Outubro</option>
+								<option value="">Novembro</option>
+								<option value="">Dezembro</option>
+							</select> </td>
+						<td> <input class="tabela-ano"> </td>
+						<td>1
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>2
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>3
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>4
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>5
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>6
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>7
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>8
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>9
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>10
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>11
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>12
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>13
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>14
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>15
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>16
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>17
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>18
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>19
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>20
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>21
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>22
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>23
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>24
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>25
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>26
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>27
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>28
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>29
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>30
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>31
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td> <input class="tabela-dias"> </td>
+						<td> <input class="tabela-presença"> </td>
+						<td> <input class="tabela-horas"> </td>
+					</tr><tr class="itens">
+						<td><br>
+							<select class="mes">
+								<option value="">ﾠ</option>
+								<option value="">Janeiro</option>
+								<option value="">Fevereiro</option>
+								<option value="">Março</option>
+								<option value="">Abril</option>
+								<option value="">Maio</option>
+								<option value="">Junho</option>
+								<option value="">Julho</option>
+								<option value="">Agosto</option>
+								<option value="">Setembro</option>
+								<option value="">Outubro</option>
+								<option value="">Novembro</option>
+								<option value="">Dezembro</option>
+							</select> </td>
+						<td> <input class="tabela-ano"> </td>
+						<td>1
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>2
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>3
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>4
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>5
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>6
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>7
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>8
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>9
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>10
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>11
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>12
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>13
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>14
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>15
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>16
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>17
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>18
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>19
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>20
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>21
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>22
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>23
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>24
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>25
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>26
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>27
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>28
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>29
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>30
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>31
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td> <input class="tabela-dias"> </td>
+						<td> <input class="tabela-presença"> </td>
+						<td> <input class="tabela-horas"> </td>
+					</tr><tr class="itens">
+						<td><br>
+							<select class="mes">
+								<option value="">ﾠ</option>
+								<option value="">Janeiro</option>
+								<option value="">Fevereiro</option>
+								<option value="">Março</option>
+								<option value="">Abril</option>
+								<option value="">Maio</option>
+								<option value="">Junho</option>
+								<option value="">Julho</option>
+								<option value="">Agosto</option>
+								<option value="">Setembro</option>
+								<option value="">Outubro</option>
+								<option value="">Novembro</option>
+								<option value="">Dezembro</option>
+							</select> </td>
+						<td> <input class="tabela-ano"> </td>
+						<td>1
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>2
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>3
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>4
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>5
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>6
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>7
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>8
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>9
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>10
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>11
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>12
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>13
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>14
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>15
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>16
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>17
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>18
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>19
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>20
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>21
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>22
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>23
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>24
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>25
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>26
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>27
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>28
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>29
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>30
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>31
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td> <input class="tabela-dias"> </td>
+						<td> <input class="tabela-presença"> </td>
+						<td> <input class="tabela-horas"> </td>
+					</tr><tr class="itens">
+						<td><br>
+							<select class="mes">
+								<option value="">ﾠ</option>
+								<option value="">Janeiro</option>
+								<option value="">Fevereiro</option>
+								<option value="">Março</option>
+								<option value="">Abril</option>
+								<option value="">Maio</option>
+								<option value="">Junho</option>
+								<option value="">Julho</option>
+								<option value="">Agosto</option>
+								<option value="">Setembro</option>
+								<option value="">Outubro</option>
+								<option value="">Novembro</option>
+								<option value="">Dezembro</option>
+							</select> </td>
+						<td> <input class="tabela-ano"> </td>
+						<td>1
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>2
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>3
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>4
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>5
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>6
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>7
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>8
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>9
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>10
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>11
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>12
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>13
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>14
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>15
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>16
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>17
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>18
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>19
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>20
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>21
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>22
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>23
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>24
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>25
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>26
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>27
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>28
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>29
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>30
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>31
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td> <input class="tabela-dias"> </td>
+						<td> <input class="tabela-presença"> </td>
+						<td> <input class="tabela-horas"> </td>
+					</tr><tr class="itens">
+						<td><br>
+							<select class="mes">
+								<option value="">ﾠ</option>
+								<option value="">Janeiro</option>
+								<option value="">Fevereiro</option>
+								<option value="">Março</option>
+								<option value="">Abril</option>
+								<option value="">Maio</option>
+								<option value="">Junho</option>
+								<option value="">Julho</option>
+								<option value="">Agosto</option>
+								<option value="">Setembro</option>
+								<option value="">Outubro</option>
+								<option value="">Novembro</option>
+								<option value="">Dezembro</option>
+							</select> </td>
+						<td> <input class="tabela-ano"> </td>
+						<td>1
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>2
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>3
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>4
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>5
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>6
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>7
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>	
+						</td>
+						<td>8
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>9
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>10
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>11
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>12
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>13
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>14
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>15
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>16
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>17
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>18
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>19
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>20
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>21
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>22
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>23
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>24
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>25
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>26
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>27
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>28
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>29
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>30
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td>31
+							<br>
+							<select class="cfxlr">
+								<option value="">ﾠ</option>
+								<option value="">C</option>
+								<option value="">F</option>
+								<option value="">X</option>
+								<option value="">L</option>
+								<option value="">R</option>
+							</select>
+						</td>
+						<td> <input class="tabela-dias"> </td>
+						<td> <input class="tabela-presença"> </td>
+						<td> <input class="tabela-horas"> </td>
+					</tr>
+				</table>
+<br>
+					<div class="totais-cfxlr">	
+						<div class="CFXL">											
+							<label class="CFXLR">C - Compareceu </label> 
+							<label class="CFXLR"> F - Faltou  </label>
+							<label class="CFXLR">X - Não houve expediente  </label> 
+							<label class="CFXLR"></label>
+							<label class="CFXLR">L - Licenciado </label> 
+							<label class="CFXLR"> R- Recesso</label>	
+						</div>
+						<div class="palavratotais">
+						     <input type="text" class="input-totais1">
+							 <input type="text" class="input-totais"> 
+							 <input type="text" class="input-totais2"> 
+							 <label class="palavratotal"> TOTAIS ﾠ</label>
+						</div>
+					</div>
+			</main>
+<br>
+			<footer>
+				<label class="primeirafrase">Obs.: Esta ficha somente poderá ser preenchida pelo Serviço de Pessoal</label><br>																																	
+				<label class="segundafrase">ou chefe imediato a quem esteja subordinado o estagiário.</label>
+                 <br>
+				<br>
+					<a class="paginaseguinte" href="file:///D:/Trabalho%20de%20Web%20-%202%C2%BA%20Bimestre/Trabalho%20de%20Web%20-%202%C2%BA%20Bimestre%20(p%C3%A1gina%202).html">Acessar Página 2<a/>
+			</footer>
+			<label class="serac">SERAC/NI</label>
+	</body>
+</html>
